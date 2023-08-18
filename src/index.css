@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --desaturated-dark-cyan-transparent: hsla(180, 29%, 50%, 30%);
+
+  /* ### Neutral */
+
+  --light-grayish-cyan-background: hsl(180, 52%, 96%); /* Background */
+  --light-grayish-cyan: hsl(180, 31%, 95%); /* Filter Tablets */
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+  font-family: "League Spartan";
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--light-grayish-cyan-background);
+}

@@ -1,0 +1,144 @@
+.header {
+  background-color: var(--desaturated-dark-cyan);
+  background-image: url("/images/bg-header-mobile.svg");
+  width: 100%;
+  aspect-ratio: 2.4038 / 1;
+  max-height: 10rem;
+  background-size: cover;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1em;
+
+  background-color: white;
+}
+
+.list__item {
+  font-weight: 700;
+  color: var(--desaturated-dark-cyan);
+  background-color: var(--light-grayish-cyan);
+  padding: 0.5em;
+  border-radius: 0.2em;
+  position: relative;
+}
+
+.list__item:hover {
+  background-color: var(--desaturated-dark-cyan);
+  color: white;
+  cursor: pointer;
+}
+
+.list__item--filter {
+  margin-right: 2em;
+}
+
+.list__item--filter:hover {
+  color: var(--desaturated-dark-cyan);
+  background-color: var(--light-grayish-cyan);
+  cursor: auto;
+}
+
+.list__item__remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--desaturated-dark-cyan);
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.list__item__remove-btn:hover {
+  background-color: var(--very-dark-grayish-cyan);
+}
+
+/* Pseudo elements to create cross mark */
+.list__item__remove-btn:before {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%) rotate(45deg);
+  content: "";
+  height: 50%;
+  width: 10%;
+  background-color: white;
+}
+
+.list__item__remove-btn:after {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%) translateY(-50%) rotate(-45deg);
+  content: "";
+  height: 50%;
+  width: 10%;
+  background-color: white;
+}
+
+.filter__container {
+  position: relative;
+  top: -2rem;
+  width: 90%;
+  margin: 0rem auto -2rem;
+
+  display: flex;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 0.3em;
+  box-shadow: var(--desaturated-dark-cyan-transparent) 0 1em 1em -0.1em;
+}
+
+.filter__list {
+  width: 80%;
+  padding: 1em;
+  margin: 0;
+  border-radius: 0.3em;
+}
+
+.filter__clear-btn {
+  display: inline-block;
+  width: 20%;
+  padding: 0.3em;
+
+  background-color: white;
+  color: var(--dark-grayish-cyan);
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.filter__clear-btn:hover {
+  text-decoration: underline;
+  color: var(--desaturated-dark-cyan);
+}
+
+.listings {
+  width: 90%;
+  margin: 3rem auto;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 700px) {
+  .header {
+    background-image: url("/images/bg-header-desktop.svg");
+    aspect-ratio: 9.2308 / 1;
+  }
+}

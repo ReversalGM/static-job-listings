@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./App.css"
-import data from "/data/data.json"
+import data from "/assets/data/data.json"
 import { JobListing } from "./JobListing.jsx"
 
 function App() {

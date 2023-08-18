@@ -1,4 +1,16 @@
 import "./JobListing.css"
+import "/assets/images/account.svg"
+import "/assets/images/eyecam-co.svg"
+import "/assets/images/faceit.svg"
+import "/assets/images/favicon-32x32.png"
+import "/assets/images/icon-remove.svg"
+import "/assets/images/insure.svg"
+import "/assets/images/loop-studios.svg"
+import "/assets/images/manage.svg"
+import "/assets/images/myhome.svg"
+import "/assets/images/photosnap.svg"
+import "/assets/images/shortly.svg"
+import "/assets/images/the-air-filter-company.svg"
 
 export function JobListing({
   id,
@@ -19,7 +31,7 @@ export function JobListing({
   return (
     <>
       <div className={featured ? "listing listing--featured" : "listing"}>
-        <img className="listing__logo" src={logo} alt="logo" />
+        <img className="listing__logo" src={"/assets/" + logo} alt="logo" />
         <div className="listing__info-container">
           <div className="listing__title-container">
             <h2 className="listing__company-name">{company}</h2>

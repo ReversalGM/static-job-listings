@@ -48,7 +48,7 @@ function App() {
                   {filter}
                   <button
                     className="list__item__remove-btn btn"
-                    onClick={(event) => {
+                    onClick={() => {
                       removeFilter(filter)
                     }}
                   ></button>

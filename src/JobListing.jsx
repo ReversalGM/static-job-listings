@@ -31,7 +31,11 @@ export function JobListing({
   return (
     <>
       <div className={featured ? "listing listing--featured" : "listing"}>
-        <img className="listing__logo" src={"/assets/" + logo} alt="logo" />
+        <img
+          className="listing__logo"
+          src={import.meta.env.BASE_URL + "assets/" + logo}
+          alt="logo"
+        />
         <div className="listing__info-container">
           <div className="listing__title-container">
             <h2 className="listing__company-name">{company}</h2>

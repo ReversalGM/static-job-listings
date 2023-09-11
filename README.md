@@ -12,8 +12,6 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
@@ -52,8 +50,9 @@ Users should be able to:
 
 ### What I learned
 
-Flexbox is used for layouts inside the card and the list of cards. CSS custom properties for colors that repeat throughout the design.
-Negative margins and relative positioning used to shift up the filter box.
+Flexbox is used for layouts inside the card and the list of cards. Since the layout is responsive, media queries are only used to change the layout from mobile to desktop at the 700px breakpoint.
+CSS custom properties are used for colours that repeat throughout the design. 
+Negative margins and relative positioning are used to shift up the filter box.
 
 ```
 .filter__container {
@@ -69,5 +68,6 @@ Negative margins and relative positioning used to shift up the filter box.
 The filter component can be improved so that users can select filters from a list instead of only from job listings. There can also be additional filter options like match any, match all, etc.
 
 ## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+GitHub Actions script used to deploy to GitHub pages:
+https://www.youtube.com/watch?v=dR9Swhw0L50
+https://github.com/benixal/benixal.github.io/blob/main/.github/workflows/deploy.yml

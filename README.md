@@ -27,8 +27,8 @@ Users should be able to:
 ### Screenshot
 
 <p float="left">
-  <img align="top" src="./screenshots/desktop_screenshot.png" width="78%">
-  <img align="top" src="./screenshots/mobile_screenshot.png" width="20%">
+  <img align="top" src="./screenshots/desktop_screenshot.png" width="68%">
+  <img align="top" src="./screenshots/mobile_screenshot.png" width="30%">
 </p>
 
 ### Links
